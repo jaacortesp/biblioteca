@@ -11,12 +11,12 @@ $(document).ready(function() { // Espera a que el documento esté completamente 
         var direccion = document.getElementById('direccion').value;
 
         if (!nombreCompleto || !usuario || !correo || !contrasena || !repetirContrasena || !fechaNacimiento) {
-            alert('Todos los campos son obligatorios');
+            alert('Estos campos son obligatorios');
             return;
         }
     
         if (correo.indexOf('@') === -1) {
-            alert('El correo electrónico debe contener una @');
+            alert('El correo electrónico debe seguir el formato de un email');
             return;
         }
     
