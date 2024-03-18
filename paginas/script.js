@@ -1,6 +1,7 @@
-$(document).ready(function() { // Espera a que el documento esté completamente cargado
-    $('#contactForm').submit(function(e) { // Selecciona el formulario con el ID 'contactForm' y se suscribe al evento de envío del formulario
-        event.preventDefault(); // Evita que el formulario se envíe de manera predeterminada (recarga la página)
+$(document).ready(function() { 
+    var formulario = document.querySelector('form');
+    formulario.addEventListener('submit', function(event) {
+    event.preventDefault(); 
 
         var nombreCompleto = document.getElementById('nombre-completo').value;
         var usuario = document.getElementById('usuario').value;
